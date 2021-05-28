@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Calculadora</title>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <body>
+        <div class="contenedor">
+        <div id="ctnMain"  >
+            <div class=" ">
+                <button id="mostrarH" class="mostrarH" onclick="historial()" title="Historial">historial</button>
+                <div id="pantalla"  class="pantalla" >0</div>
+              
+            </div>
+
+            <div id="ctnBtn" >
+                <button name="btnUndef" class="boton" value="Mr" data-numero="read">Mr</button>
+                <button name="btnMem" class="boton" value="M" data-simbolo="m">M+</button>
+                <button name="btnClear" class="boton" value="btnClear" data-operacion="clear">C</button>
+                <button name="btnDivnamee" class="boton" value="/" data-simbolo="/">/</button>
+                <button name="btn7" class="boton" value="7" data-numero="7">7</button>
+                <button name="btn8" class="boton" value="8" data-numero="8">8</button>
+                <button name="btn9" class="boton " value="9" data-numero="9">9</button>
+                <button name="btnMulti" class="boton" value="*" data-simbolo="*">x</button>
+                <button name="btn4" class="boton" value="4" data-numero="4">4</button>
+                <button name="btn5" class="boton"  value="5" data-numero="5">5</button>
+                <button name="btn6" class="boton" value="6" data-numero="6">6</button>
+                <button name="btnMinus" class="boton" value="-" data-simbolo="-">-</button>
+                <button name="btn1" class="boton" value="1" data-numero="1">1</button>
+                <button name="btn2" class="boton" value="2" data-numero="2">2</button>
+                <button name="btn3" class="boton" value="3" data-numero="3">3</button>
+                <button name="btnPlus" class="boton" value="+" data-simbolo="+">+</button>
+                <button name="btnPosNeg" class="boton" value="negative" data-numero="negative">+/-</button>
+                <button name="btnZero" class="boton" value="0" data-numero="0">0</button>
+                <button name="btnDot" class="boton" value="." data-numero=".">.</button>
+                <button name="btnEqual" class="boton" value="=" data-operacion="=">=</button>
+            </div>
+        </div>
+                <div id="historialT" class="historial " style="display: none;">
+            <p> Historial</p><hr>
+            <div id="historial" ></div>
+        </div>
+    </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
